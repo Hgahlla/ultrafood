@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import FeaturedIn from "../components/FeaturedIn";
 import HowItWorks from "../components/HowItWorks";
 import Meals from "../components/Meals";
+import Testimonials from "../components/Testimonials";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <FeaturedIn />
       <HowItWorks />
       <Meals />
+      <Testimonials />
     </main>
   );
 };
