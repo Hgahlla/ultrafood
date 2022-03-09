@@ -6,6 +6,7 @@ import HowItWorks from "../components/HowItWorks";
 import Meals from "../components/Meals";
 import Testimonials from "../components/Testimonials";
 import Pricing from "../components/Pricing";
+import CallToAction from "../components/CallToAction";
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
       <Meals />
       <Testimonials />
       <Pricing />
+      <CallToAction />
     </main>
   );
 };
