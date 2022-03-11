@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 import logo from "../assets/logo.png";
 import "./Header.css";
 
 const Header = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   return (
-    <header className="header">
+    <header className={`header ${isSidebarOpen ? "nav-open" : ""}`}>
       <a href="#">
         <img className="logo" alt="Ultrafood logo" src={logo} />
       </a>
@@ -39,9 +41,17 @@ const Header = () => {
         </ul>
       </nav>
 
-      <button className="btn-mobile-nav ">
-        <ion-icon className="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon className="icon-mobile-nav" name="close-outline"></ion-icon>
+      <button className="btn-mobile-nav">
+        <ion-icon
+          class="icon-mobile-nav"
+          name="menu-outline"
+          onClick={() => setIsSidebarOpen(true)}
+        ></ion-icon>
+        <ion-icon
+          class="icon-mobile-nav"
+          name="close-outline"
+          onClick={() => setIsSidebarOpen(false)}
+        ></ion-icon>
       </button>
     </header>
   );
