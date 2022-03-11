@@ -7,48 +7,50 @@ import "./HowItWorks.css";
 
 const HowItWorks = () => {
   return (
-    <section class="section-how" id="how">
-      <div class="container">
-        <span class="subheading">How it works</span>
-        <h2 class="heading-secondary">
+    <section className="section-how" id="how">
+      <div className="container">
+        <span className="subheading">How it works</span>
+        <h2 className="heading-secondary">
           Your daily dose of health in 3 simple steps
         </h2>
       </div>
 
-      <div class="container grid grid--2-cols grid--center-v">
+      <div className="container grid grid--2-cols grid--center-v">
         {/* STEP 01 */}
-        <div class="step-text-box">
-          <p class="step-number">01</p>
-          <h3 class="heading-tertiary">Tell us what you like (and what not)</h3>
-          <p class="step-description">
+        <div className="step-text-box">
+          <p className="step-number">01</p>
+          <h3 className="heading-tertiary">
+            Tell us what you like (and what not)
+          </h3>
+          <p className="step-description">
             Never again waste time thinking about what to eat! Ultrafood AI will
             create a 100% personalized weekly meal plan just for you. It makes
             sure you get all the nutrients and vitamins you need, no matter what
             diet you follow!
           </p>
         </div>
-        <div class="step-img-box">
+        <div className="step-img-box">
           <img
             src={appScreen1}
-            class="step-img"
+            className="step-img"
             alt="iPhone app
       preferences selection screen"
           />
         </div>
 
         {/* STEP 02 */}
-        <div class="step-img-box">
+        <div className="step-img-box">
           <img
             src={appScreen2}
-            class="step-img"
+            className="step-img"
             alt="iPhone app
       meal approving plan screen"
           />
         </div>
-        <div class="step-text-box">
-          <p class="step-number">02</p>
-          <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
-          <p class="step-description">
+        <div className="step-text-box">
+          <p className="step-number">02</p>
+          <h3 className="heading-tertiary">Approve your weekly meal plan</h3>
+          <p className="step-description">
             Once per week, approve the meal plan generated for you by Ultrafood
             AI. You can change ingredients, swap entire meals, or even add your
             own recipes.
@@ -56,19 +58,19 @@ const HowItWorks = () => {
         </div>
 
         {/* STEP 03 */}
-        <div class="step-text-box">
-          <p class="step-number">03</p>
-          <h3 class="heading-tertiary">Receive meals at convenient time</h3>
-          <p class="step-description">
+        <div className="step-text-box">
+          <p className="step-number">03</p>
+          <h3 className="heading-tertiary">Receive meals at convenient time</h3>
+          <p className="step-description">
             Best chefs in town will cook your selected meal every day, and we
             will deliver it to your door whenever works best for you. You can
             change delivery schedule and address daily!
           </p>
         </div>
-        <div class="step-img-box">
+        <div className="step-img-box">
           <img
             src={appScreen3}
-            class="step-img"
+            className="step-img"
             alt="iPhone app
       delivery screen"
           />

@@ -9,10 +9,10 @@ import "./FeaturedIn.css";
 
 const FeaturedIn = () => {
   return (
-    <section class="section-featured">
-      <div class="container">
-        <h2 class="heading-featured-in">As featured in</h2>
-        <div class="logos">
+    <section className="section-featured">
+      <div className="container">
+        <h2 className="heading-featured-in">As featured in</h2>
+        <div className="logos">
           <img src={techCrunch} alt="Techcrunch logo" />
           <img src={businessInsider} alt="Business Insider logo" />
           <img src={newYorkTimes} alt="The New York Times logo" />

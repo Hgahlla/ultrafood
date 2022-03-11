@@ -20,68 +20,70 @@ import "./Testimonials.css";
 
 const Testimonials = () => {
   return (
-    <section class="section-testimonials" id="testimonials">
-      <div class="testimonials-container">
-        <span class="subheading">Testimonials</span>
-        <h2 class="heading-secondary">Once you try it, you can't go back</h2>
+    <section className="section-testimonials" id="testimonials">
+      <div className="testimonials-container">
+        <span className="subheading">Testimonials</span>
+        <h2 className="heading-secondary">
+          Once you try it, you can't go back
+        </h2>
 
-        <div class="testimonials">
-          <figure class="testimonial">
+        <div className="testimonials">
+          <figure className="testimonial">
             <img
-              class="testimonial-img"
+              className="testimonial-img"
               alt="Customer Dave Bryson"
               src={testimonial1}
             />
-            <blockquote class="testimonial-text">
+            <blockquote className="testimonial-text">
               Inexpensive, healthy and great-tasting meals, without even having
               to order manually! It feels truly magical.
             </blockquote>
-            <p class="testimonial-name">&mdash; Dave Bryson</p>
+            <p className="testimonial-name">&mdash; Dave Bryson</p>
           </figure>
 
-          <figure class="testimonial">
+          <figure className="testimonial">
             <img
-              class="testimonial-img"
+              className="testimonial-img"
               alt="Customer Ben Hadley"
               src={testimonial2}
             />
-            <blockquote class="testimonial-text">
+            <blockquote className="testimonial-text">
               The AI algorithm is crazy good, it chooses the right meals for me
               every time. It's amazing not to worry about food anymore!
             </blockquote>
-            <p class="testimonial-name">&mdash; Ben Hadley</p>
+            <p className="testimonial-name">&mdash; Ben Hadley</p>
           </figure>
 
-          <figure class="testimonial">
+          <figure className="testimonial">
             <img
-              class="testimonial-img"
+              className="testimonial-img"
               alt="Customer Steve Miller"
               src={testimonial3}
             />
-            <blockquote class="testimonial-text">
+            <blockquote className="testimonial-text">
               Ultrafood is a life saver! I just started a company, so there's no
               time for cooking. I couldn't live without my daily meals now!
             </blockquote>
-            <p class="testimonial-name">&mdash; Steve Miller</p>
+            <p className="testimonial-name">&mdash; Steve Miller</p>
           </figure>
 
-          <figure class="testimonial">
+          <figure className="testimonial">
             <img
-              class="testimonial-img"
+              className="testimonial-img"
               alt="Customer Hannah Smith"
               src={testimonial4}
             />
-            <blockquote class="testimonial-text">
+            <blockquote className="testimonial-text">
               I got Ultrafood for the whole family, and it frees up so much
               time! Plus, everything is organic and vegan and without plastic.
             </blockquote>
-            <p class="testimonial-name">&mdash; Hannah Smith</p>
+            <p className="testimonial-name">&mdash; Hannah Smith</p>
           </figure>
         </div>
       </div>
 
-      <div class="gallery">
-        <figure class="gallery-item">
+      <div className="gallery">
+        <figure className="gallery-item">
           <img
             src={gallery1}
             alt="Beautifully
@@ -89,77 +91,77 @@ const Testimonials = () => {
           />
           {/* <figcaption>Caption</figcaption> */}
         </figure>
-        <figure class="gallery-item">
+        <figure className="gallery-item">
           <img
             src={gallery2}
             alt="Beautifully
       arranged food"
           />
         </figure>
-        <figure class="gallery-item">
+        <figure className="gallery-item">
           <img
             src={gallery3}
             alt="Beautifully
       arranged food"
           />
         </figure>
-        <figure class="gallery-item">
+        <figure className="gallery-item">
           <img
             src={gallery4}
             alt="Beautifully
       arranged food"
           />
         </figure>
-        <figure class="gallery-item">
+        <figure className="gallery-item">
           <img
             src={gallery5}
             alt="Beautifully
       arranged food"
           />
         </figure>
-        <figure class="gallery-item">
+        <figure className="gallery-item">
           <img
             src={gallery6}
             alt="Beautifully
       arranged food"
           />
         </figure>
-        <figure class="gallery-item">
+        <figure className="gallery-item">
           <img
             src={gallery7}
             alt="Beautifully
       arranged food"
           />
         </figure>
-        <figure class="gallery-item">
+        <figure className="gallery-item">
           <img
             src={gallery8}
             alt="Beautifully
       arranged food"
           />
         </figure>
-        <figure class="gallery-item">
+        <figure className="gallery-item">
           <img
             src={gallery9}
             alt="Beautifully
       arranged food"
           />
         </figure>
-        <figure class="gallery-item">
+        <figure className="gallery-item">
           <img
             src={gallery10}
             alt="Beautifully
       arranged food"
           />
         </figure>
-        <figure class="gallery-item">
+        <figure className="gallery-item">
           <img
             src={gallery11}
             alt="Beautifully
       arranged food"
           />
         </figure>
-        <figure class="gallery-item">
+        <figure className="gallery-item">
           <img
             src={gallery12}
             alt="Beautifully
