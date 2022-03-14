@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "react-scroll/modules/components/Link";
 
 import meal1 from "../assets/meals/meal-1.jpg";
 import meal2 from "../assets/meals/meal-2.jpg";
@@ -153,9 +154,16 @@ const Meals = () => {
       </div>
 
       <div className="container all-recipes">
-        <a href="#" className="link">
+        <Link
+          className="link"
+          to="cta"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
+        >
           See all recipes &rarr;
-        </a>
+        </Link>
       </div>
     </section>
   );

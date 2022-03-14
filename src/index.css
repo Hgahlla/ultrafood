@@ -184,6 +184,7 @@ strong {
   transition: all 0.3s;
 }
 
+.btn--full,
 .btn--full:link,
 .btn--full:visited {
   background-color: #e67e22;
@@ -195,6 +196,7 @@ strong {
   background-color: #cf711f;
 }
 
+.btn--outline,
 .btn--outline:link,
 .btn--outline:visited {
   background-color: #fff;
@@ -222,6 +224,7 @@ strong {
   color: #555;
 }
 
+.link,
 .link:link,
 .link:visited {
   display: inline-block;
@@ -234,6 +237,7 @@ strong {
 
 .link:hover,
 .link:active {
+  cursor: pointer;
   color: #cf711f;
   border-bottom: 1px solid transparent;
 }
@@ -462,6 +466,7 @@ strong {
     gap: 4.8rem;
   }
 
+  .main-nav-link,
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;

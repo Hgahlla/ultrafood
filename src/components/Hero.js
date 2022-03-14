@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-scroll";
 
 import customer1 from "../assets/customers/customer-1.jpg";
 import customer2 from "../assets/customers/customer-2.jpg";
@@ -11,6 +12,32 @@ import heroPng from "../assets/hero/hero-min.png";
 import "./Hero.css";
 
 const Hero = () => {
+  useEffect(() => {
+    // Sticky navigation
+    const sectionHeroEl = document.querySelector(".section-hero");
+
+    const obs = new IntersectionObserver(
+      (entries) => {
+        const ent = entries[0];
+
+        if (ent.isIntersecting === false) {
+          document.body.classList.add("sticky");
+        }
+
+        if (ent.isIntersecting === true) {
+          document.body.classList.remove("sticky");
+        }
+      },
+      {
+        // In the viewport
+        root: null,
+        threshold: 0,
+        rootMargin: "-80px",
+      }
+    );
+    obs.observe(sectionHeroEl);
+  });
+
   return (
     <section className="section-hero">
       <div className="hero">
@@ -23,12 +50,26 @@ const Hero = () => {
             healthy again. Tailored to your personal tastes and nutritional
             needs.
           </p>
-          <a href="#cta" className="btn btn--full margin-right-sm">
+          <Link
+            className="btn btn--full margin-right-sm"
+            to="cta"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
             Start eating well
-          </a>
-          <a href="#how" className="btn btn--outline">
+          </Link>
+          <Link
+            className="btn btn--outline"
+            to="how"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
             Learn more &darr;
-          </a>
+          </Link>
           <div className="delivered-meals">
             <div className="delivered-imgs">
               <img src={customer1} alt="Customer" />

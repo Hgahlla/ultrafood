@@ -1,4 +1,5 @@
 import React from "react";
+import { animateScroll } from "react-scroll";
 
 import logo from "../assets/logo.png";
 import "./Footer.css";
@@ -8,9 +9,14 @@ const Footer = () => {
     <footer className="footer">
       <div className="container grid grid--footer">
         <div className="logo-col">
-          <a href="#" className="footer-logo">
-            <img className="logo" alt="Ultrafood logo" src={logo} />
-          </a>
+          <div class="footer-logo">
+            <img
+              className="logo"
+              alt="Ultrafood logo"
+              src={logo}
+              onClick={() => animateScroll.scrollToTop()}
+            />
+          </div>
 
           <ul className="social-links">
             <li>

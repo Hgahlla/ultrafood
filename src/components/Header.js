@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, animateScroll } from "react-scroll";
 
 import logo from "../assets/logo.png";
 import "./Header.css";
@@ -8,35 +9,73 @@ const Header = () => {
 
   return (
     <header className={`header ${isSidebarOpen ? "nav-open" : ""}`}>
-      <a href="#">
-        <img className="logo" alt="Ultrafood logo" src={logo} />
-      </a>
+      <img
+        className="logo"
+        alt="Ultrafood logo"
+        src={logo}
+        onClick={() => animateScroll.scrollToTop()}
+      />
       <nav className="main-nav">
         <ul className="main-nav-list">
           <li>
-            <a className="main-nav-link" href="#how">
+            <Link
+              className="main-nav-link"
+              to="how"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
               How it works
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="main-nav-link" href="#meals">
+            <Link
+              className="main-nav-link"
+              to="meals"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
               Meals
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="main-nav-link" href="#testimonials">
+            <Link
+              className="main-nav-link"
+              to="testimonials"
+              spy={true}
+              smooth={true}
+              offset={-75}
+              duration={500}
+            >
               Testimonials
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="main-nav-link" href="#pricing">
+            <Link
+              className="main-nav-link"
+              to="pricing"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
               Pricing
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="main-nav-link nav-cta" href="#cta">
+            <Link
+              className="main-nav-link nav-cta"
+              to="cta"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
               Try for free
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

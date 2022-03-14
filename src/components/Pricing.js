@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 import "./Pricing.css";
 
@@ -51,9 +52,16 @@ const Pricing = () => {
             </li>
           </ul>
           <div className="plan-sign-up">
-            <a href="#" className="btn btn--full">
+            <Link
+              className="btn btn--full"
+              to="cta"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
               Start eating well
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -100,9 +108,16 @@ const Pricing = () => {
             </li>
           </ul>
           <div className="plan-sign-up">
-            <a href="#" className="btn btn--full">
+            <Link
+              className="btn btn--full"
+              to="cta"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
               Start eating well
-            </a>
+            </Link>
           </div>
         </div>
       </div>
