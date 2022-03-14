@@ -26,10 +26,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <ion-icon
-                  className="social-icon"
-                  name="logo-instagram"
-                ></ion-icon>
+                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
               </a>
             </li>
             <li>
@@ -39,10 +36,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <ion-icon
-                  className="social-icon"
-                  name="logo-twitter"
-                ></ion-icon>
+                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
               </a>
             </li>
             <li>
@@ -52,10 +46,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                <ion-icon
-                  className="social-icon"
-                  name="logo-facebook"
-                ></ion-icon>
+                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
               </a>
             </li>
           </ul>
