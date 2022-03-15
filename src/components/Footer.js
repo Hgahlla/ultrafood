@@ -52,7 +52,8 @@ const Footer = () => {
           </ul>
 
           <p className="copyright">
-            Copyright &copy; 2027 by Ultrafood, Inc. All rights reserved.
+            Copyright &copy; {new Date().getFullYear()} by Ultrafood, Inc. All
+            rights reserved.
           </p>
         </div>
         <div className="address-col">
@@ -76,12 +77,12 @@ const Footer = () => {
           <p className="footer-heading">Account</p>
           <ul className="footer-nav">
             <li>
-              <a className="footer-link" href="#">
+              <a className="footer-link" href="/ ">
                 Create account
               </a>
             </li>
             <li>
-              <a className="footer-link" href="#">
+              <a className="footer-link" href="/">
                 Sign in
               </a>
             </li>
@@ -112,17 +113,17 @@ const Footer = () => {
           <p className="footer-heading">Company</p>
           <ul className="footer-nav">
             <li>
-              <a className="footer-link" href="#">
+              <a className="footer-link" href="/">
                 About Ultrafood
               </a>
             </li>
             <li>
-              <a className="footer-link" href="#">
+              <a className="footer-link" href="/">
                 For Business
               </a>
             </li>
             <li>
-              <a className="footer-link" href="#">
+              <a className="footer-link" href="/">
                 Cooking partners
               </a>
             </li>
@@ -133,17 +134,17 @@ const Footer = () => {
           <p className="footer-heading">Resources</p>
           <ul className="footer-nav">
             <li>
-              <a className="footer-link" href="#">
+              <a className="footer-link" href="/">
                 Recipe directory
               </a>
             </li>
             <li>
-              <a className="footer-link" href="#">
+              <a className="footer-link" href="/">
                 Help center
               </a>
             </li>
             <li>
-              <a className="footer-link" href="#">
+              <a className="footer-link" href="/">
                 Privacy & terms
               </a>
             </li>
