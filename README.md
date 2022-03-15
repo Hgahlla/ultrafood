@@ -1,18 +1,12 @@
 # Ultrafood
 
 A responsive landing page for a meal plan service startup that has smooth scrolling using React.
-<br/> <br/>
 
 ## Demo
 
----
-
 Access the website at https://ultrafood.netlify.app/
-<br/> <br/>
 
 ## Available Scripts
-
----
 
 In the project directory, you can run:
 
