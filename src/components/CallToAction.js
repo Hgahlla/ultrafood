@@ -15,7 +15,13 @@ const CallToAction = () => {
               meal is on us!
             </p>
 
-            <form className="cta-form" name="sign-up" netlify>
+            <form
+              className="cta-form"
+              name="sign-up"
+              method="POST"
+              data-netlify="true"
+            >
+              <input type="hidden" name="form-name" value="sign-up" />
               <div>
                 <label for="full-name">Full Name</label>
                 <input
